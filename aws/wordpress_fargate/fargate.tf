@@ -99,7 +99,7 @@ resource "aws_ecs_cluster" "this" {
 
 resource "aws_security_group" "wordpress" {
   name        = "${var.prefix}-wordpress-${var.environment}"
-  description = "Fargate wordpress edited"
+  description = "Fargate wordpress"
   vpc_id      = module.vpc.vpc_id
   egress {
     from_port = 0
